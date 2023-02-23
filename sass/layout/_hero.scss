@@ -1,4 +1,46 @@
-.hero-style {  
+.hero-style {
+    padding-top: 118px; 
+    padding-bottom: 198px;
+    background-color: var(--footer-color);
+    text-align: center; 
+}
+
+.overlay {
+    max-width: 480px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/Hero-mob-1x.jpg);
+    background-size: cover;
+    background-position: center;
+
+        @media (min-device-pixel-ratio: 2), 
+            (min-resolution: 192dpi), 
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, 
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)),
+          url(../images/Hero-mob-2x.jpg);
+      }
+}
+
+.hero {
+    margin: 0 auto;
+    width: 360px;
+    
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--third-brand-color);
+}
+
+/*.hero-style {  
     padding-top: 200px; 
     padding-bottom: 200px;
     background-color: var(--footer-color);
@@ -57,3 +99,4 @@
     }
 }
 
+*/
