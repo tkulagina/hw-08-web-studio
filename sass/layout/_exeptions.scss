@@ -1,3 +1,32 @@
+.exeptions__item {
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+.exeptions__container {
+    height: 120px;
+    
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: var(--second-background-color);
+}
+
+.exeptions__subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    color: var(--title-color);
+}
+
+.exeptions__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
 /*.exeptions {
     display: flex;
     flex-wrap: nowrap;
