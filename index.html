@@ -47,14 +47,14 @@
                     </svg>
             </button>
         </div>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <div class="menu-container__overall">
+        <div class="menu-container js-menu-container" id="mobile-menu">                
+            <button class="mobile-menu-close-btn menu-toggle js-close-menu">
+                <svg class="mobile-menu-close-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#close-icon"></use>
+                </svg>
+            </button>
+            <div class="menu-container__overall">        
                 <div class="menu-container__top">
-                    <button class="mobile-menu-close-btn menu-toggle js-close-menu">
-                        <svg class="mobile-menu-close-icon" width="24" height="24">
-                            <use href="./images/symbol-defs.svg#close-icon"></use>
-                        </svg>
-                    </button>        
                     <ul class="mobile-menu">
                         <li class="list mobile-menu__item"><a href="" class="link mobile-menu__link current-link">Студія</a></li>
                         <li class="list mobile-menu__item"><a href="" class="link mobile-menu__link">Портфоліо</a></li>
@@ -88,7 +88,7 @@
                 <button class="button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section> 
-<!--section 2--> <!--
+<!--section 2--> 
         <section class="section-pad">
             <div class="container">
                 <h2 class="visually-hidden">Особливості</h2> 
@@ -131,7 +131,7 @@
                         </li>
                     </ul> 
             </div>
-        </section> -->
+        </section>
 <!--section 3--> <!--
         <section class="actions">
             <div class="container">
@@ -419,7 +419,7 @@
                 </div>
         </div>
     </footer> -->
-<!---Modal window--> <!--
+<!---Modal window--> 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -487,7 +487,7 @@
                 <button type="submit" class="submit-button">Відправити</button>
             </form>
         </div>        
-    </div> -->
+    </div> 
     <script
     defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
