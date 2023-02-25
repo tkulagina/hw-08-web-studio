@@ -83,6 +83,15 @@ img {
   color: var(--third-brand-color);
 }
 
+.section-name {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,14 +898,6 @@ img {
   .actions__list .item + .item {
     margin-left: 30px;
   }
-  .section-name {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: var(--title-color);
-  }
   .actions__item {
     position: relative;
   }
@@ -918,4 +919,94 @@ img {
     color: var(--third-brand-color);
     background-color: rgba(47, 48, 58, 0.8);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.team {
+  background-color: var(--second-background-color);
+}
+
+.team__photo {
+  background-color: var(--third-brand-color);
+}
+.team__photo:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team__img {
+  width: 450px;
+}
+
+.team__description {
+  padding: 30px 32px;
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__subtitle {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team__title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.social-list {
+  width: 206px;
+  margin: 0 auto;
+}
+
+.social-list__icon-light {
+  background-color: var(--third-brand-color);
+  -webkit-transition: background-color var(--time-duration) var(--timing-function);
+  transition: background-color var(--time-duration) var(--timing-function);
+}
+.social-list__link .social-list__icon-light {
+  fill: var(--fill-color);
+  -webkit-transition: fill var(--time-duration) var(--timing-function);
+  transition: fill var(--time-duration) var(--timing-function);
+}
+.social-list__link:hover .social-list__icon-light, .social-list__link:focus .social-list__icon-light {
+  fill: var(--third-brand-color);
+  background-color: var(--brand-color);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: var(--brand-color);
+}
+
+/*
+
+.team__list {
+    display: flex; 
+    margin-left: -30px;  
+}
+.team__photo {
+
+
+    & + & {
+        margin-left: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+*//*# sourceMappingURL=main.css.map */
