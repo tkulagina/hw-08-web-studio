@@ -3,6 +3,7 @@
 }
 
 .team__photo {
+    width: 100%;
     background-color: var(--third-brand-color);
 
     &:not(:last-child) {
