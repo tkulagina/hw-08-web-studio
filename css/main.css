@@ -61,6 +61,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media (min-width: 1200px) {
+  .section-pad {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .logo {
   font-family: var(--logo-font-family);
   font-weight: 700;
@@ -791,10 +797,21 @@ img {
 }
 
 .exeptions__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 120px;
-  margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--second-background-color);
+}
+.exeptions__container:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .exeptions__subtitle {
@@ -802,6 +819,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   color: var(--title-color);
 }
 
@@ -811,42 +829,42 @@ img {
   line-height: 1.71;
 }
 
-/*.exeptions {
+@media (min-width: 768px) {
+  .exeptions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: -15px;
+  }
+  .exeptions__item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    margin: 15px;
+  }
+  .exeptions__subtitle {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .exeptions {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-left: -15px;
     margin-right: -15px;
-}
-
-.exeptions__item {
-    flex-basis: calc((100% - 90px)/4);
+  }
+  .exeptions__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
     margin-left: 15px;
     margin-right: 15px;
-}
-
-.exeptions__container {
-    display: flex;
+  }
+  .exeptions__container {
     width: 270px;
     height: 120px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-
-    background-color: var(--second-background-color);
-}
-
-.exeptions__subtitle {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-
-    color: var(--title-color);
-}
-
-.exeptions__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-}*//*# sourceMappingURL=main.css.map */
+  }
+}/*# sourceMappingURL=main.css.map */
