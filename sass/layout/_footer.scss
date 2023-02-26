@@ -131,7 +131,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 12px;
+    margin: 0 auto;
     min-width: 200px;
     height: 50px;
     
@@ -168,15 +168,21 @@ address {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {    
     .container-adress {
         justify-content: flex-start;
+        align-items: baseline;
         width: 231px;
         margin-right: 70px;
+        margin-bottom: 0;
     }
 
     .address {
         margin-bottom: 9px; 
+    }
+
+    .foorer-list__item{
+        text-align: left;
     }
 
     .footer-add {
@@ -186,6 +192,11 @@ address {
     .footer-social-list {
         width: 206px;
         margin-right: 93px;
+        margin-bottom: 0;
+    }
+
+    .submit-section {
+        align-items: normal;
     }
 
     .submit-mail {
@@ -197,5 +208,7 @@ address {
         width: 358px;
         height: 50px;
         padding-left: 16px;
+        margin-bottom: 0;
+        margin-right: 12px;
     }
 }
