@@ -220,6 +220,7 @@ img {
   transition: -webkit-transform var(--time-duration) var(--timing-function);
   transition: transform var(--time-duration) var(--timing-function);
   transition: transform var(--time-duration) var(--timing-function), -webkit-transform var(--time-duration) var(--timing-function);
+  z-index: 50;
 }
 
 .menu-container.is-open {

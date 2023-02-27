@@ -58,6 +58,7 @@
   background-color: var(--third-brand-color);
   transform: translateX(100%);
   transition: transform var(--time-duration) var(--timing-function);
+  z-index: 50;
 }
 
 .menu-container.is-open {
