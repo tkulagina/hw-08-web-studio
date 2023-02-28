@@ -1,24 +1,24 @@
 .container {
   min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 .body {
@@ -199,8 +199,11 @@ img {
   fill: var(--title-color);
 }
 
-.mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-open-btn:hover .mobile-menu-open-icon,
+.mobile-menu-open-btn:focus .mobile-menu-open-icon .mobile-menu-close-btn:hover .mobile-menu-close-icon,
 .mobile-menu-close-btn:focus .mobile-menu-close-icon {
+  -webkit-transition: fill var(--time-duration) var(--timing-function);
+  transition: fill var(--time-duration) var(--timing-function);
   fill: var(--brand-color);
 }
 
@@ -418,6 +421,7 @@ img {
     display: flex;
   }
   .connect__item + .connect__item {
+    margin-top: 0;
     margin-left: 50px;
   }
 }
@@ -429,7 +433,7 @@ img {
 }
 
 .overlay {
-  max-width: 480px;
+  max-width: 767px;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -480,7 +484,7 @@ img {
 
 @media (min-width: 768px) {
   .overlay {
-    max-width: 768px;
+    max-width: 1199px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-tabl-1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-tabl-1x.jpg);
@@ -512,7 +516,9 @@ img {
 }
 @media (min-width: 1200px) {
   .hero {
-    width: 696px;
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 @media (min-width: 1200px) {
@@ -785,8 +791,8 @@ img {
 
 @media (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    max-height: 581px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
@@ -1459,6 +1465,7 @@ address {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-color);
 }
 

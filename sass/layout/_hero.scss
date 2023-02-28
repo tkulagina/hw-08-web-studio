@@ -6,7 +6,7 @@
 }
 
 .overlay {
-    max-width: 480px;
+    max-width: 767px;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -68,7 +68,7 @@
 
 @media (min-width: 768px) {
     .overlay {
-        max-width: 768px;
+        max-width: 1199px;
         height: 400px;
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4), 
@@ -112,7 +112,9 @@
     }
 
     .hero {
-        width: 696px;
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
     }
 
     .button {   

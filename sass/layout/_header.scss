@@ -39,10 +39,13 @@
 .mobile-menu-open-icon,
 .mobile-menu-close-icon {
   fill: var(--title-color);
+  transition: fill var(--time-duration) var(--timing-function);
 }
 
+.mobile-menu-open-btn:hover .mobile-menu-open-icon,
+.mobile-menu-open-btn:focus .mobile-menu-open-icon
 .mobile-menu-close-btn:hover .mobile-menu-close-icon,
-.mobile-menu-close-btn:focus .mobile-menu-close-icon {
+.mobile-menu-close-btn:focus .mobile-menu-close-icon {  
   fill: var(--brand-color);
 }
 
@@ -132,6 +135,7 @@
 
   border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
+
 
 @media (min-width: 768px) {
   .menu-toggle {
@@ -248,13 +252,13 @@
 
   .menu__item + .menu__item {
     margin-left: 50px;
-}
+  }
   .connect {
     display: flex;
-}
+  }
 
-.connect__item + .connect__item {
-  margin-left: 50px;
-}
-
+  .connect__item + .connect__item {
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }
