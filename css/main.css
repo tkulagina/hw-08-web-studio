@@ -6,14 +6,14 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -191,19 +191,20 @@ img {
 .mobile-menu-open-btn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 10px;
 }
 
 .mobile-menu-open-icon,
 .mobile-menu-close-icon {
   fill: var(--title-color);
+  -webkit-transition: fill var(--time-duration) var(--timing-function);
+  transition: fill var(--time-duration) var(--timing-function);
 }
 
 .mobile-menu-open-btn:hover .mobile-menu-open-icon,
-.mobile-menu-open-btn:focus .mobile-menu-open-icon .mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-open-btn:focus .mobile-menu-open-icon,
+.mobile-menu-close-btn:hover .mobile-menu-close-icon,
 .mobile-menu-close-btn:focus .mobile-menu-close-icon {
-  -webkit-transition: fill var(--time-duration) var(--timing-function);
-  transition: fill var(--time-duration) var(--timing-function);
   fill: var(--brand-color);
 }
 
@@ -214,6 +215,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding-left: 40px;
+  padding-right: 15px;
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: var(--third-brand-color);
@@ -250,7 +252,7 @@ img {
 .mobile-menu-close-btn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 10x;
   color: #fff;
 }
 
@@ -276,7 +278,7 @@ img {
 
 .mobile-contact__link-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.18;
   color: var(--brand-color);
 }
@@ -290,7 +292,7 @@ img {
 
 .mobile-social-list__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.22;
   color: var(--brand-color);
 }
@@ -307,6 +309,14 @@ img {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media (min-width: 480px) {
+  .mobile-contact__link-tel {
+    font-size: 34px;
+  }
+  .mobile-social-list__link {
+    font-size: 18px;
+  }
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
