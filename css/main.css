@@ -1422,7 +1422,7 @@ address {
   border: 1px solid transparent;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.63;
   cursor: pointer;
   color: var(--title-color);
@@ -1439,6 +1439,11 @@ address {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media (min-width: 480px) {
+  .button-portfolio {
+    font-size: 16px;
+  }
+}
 @media (min-width: 768px) {
   .list-button {
     display: -webkit-box;
@@ -1462,8 +1467,20 @@ address {
     margin-bottom: 50px;
   }
 }
-.photo-style:not(:last-child) {
-  margin-bottom: 30px;
+.portfolio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -15px;
+}
+
+.photo-style {
+  margin: 15px;
 }
 
 .photo-style-list {

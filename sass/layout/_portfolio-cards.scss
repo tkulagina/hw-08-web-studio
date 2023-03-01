@@ -1,5 +1,12 @@
-.photo-style:not(:last-child) {    
-    margin-bottom: 30px;
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px;
+}
+
+.photo-style {    
+    margin: 15px;
 }
 
 .photo-style-list {
