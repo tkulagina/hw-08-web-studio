@@ -10,7 +10,7 @@
 
 .client__link {
     display: flex;
-    width: 210px;
+    width: 120px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -35,6 +35,13 @@
         fill: var(--brand-color);    
     }
 }
+
+@media (min-width: 480px){
+    .client__link {
+        width: 210px;
+    }
+}
+
 
 @media (min-width: 768px) {
     .client__link {
