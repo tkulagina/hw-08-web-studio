@@ -1,11 +1,13 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: -15px;
 }
 
-.photo-style {    
+.photo-style {  
+    align-self: center;  
     margin: 15px;
 }
 
@@ -102,13 +104,18 @@
         font-size: 18px;
         padding: 49px 24px;
     }
+
+    .link-portfolio {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .link-portfolio > .photo-style-list {
+        flex-grow: 1;
+    }
 }
 
-@media (min-width: 1200px) {
-    /*.portfolio-list {
-        flex-basis: calc(100% / 3);
-    }*/
-
+@media (min-width: 1200px) {   
     .photo-style {
         width: 370px;       
     }
