@@ -1462,7 +1462,7 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 350px;
+  width: 305px;
   margin-bottom: 40px;
 }
 
@@ -1496,6 +1496,9 @@ address {
 }
 
 @media (min-width: 480px) {
+  .list-button {
+    width: 350px;
+  }
   .button-portfolio {
     font-size: 16px;
   }
