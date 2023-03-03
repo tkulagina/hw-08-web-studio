@@ -748,15 +748,7 @@ img {
 }
 
 .checkbox-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71;
@@ -835,6 +827,15 @@ img {
     margin-bottom: 30px;
   }
   .checkbox-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 12px;
   }
   .agreement {
@@ -860,6 +861,16 @@ img {
   }
   .contact-form-checkbox-wrapper {
     padding-left: 12px;
+  }
+  .contact-form-input {
+    height: 41px;
+  }
+  .contact-form-comment {
+    height: 121px;
+    margin-bottom: 20px;
+  }
+  .contact-form .contact-form-fields + .contact-form-fields {
+    margin-top: 12px;
   }
 }
 .exeptions {
@@ -942,6 +953,9 @@ img {
     margin-bottom: 0;
     margin-left: 15px;
     margin-right: 15px;
+  }
+  .exeptions__item + .exeptions__item {
+    margin-top: 0;
   }
   .exeptions__container {
     width: 270px;
@@ -1532,18 +1546,10 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: -15px;
 }
 
 .photo-style {
-  -ms-flex-item-align: center;
-      align-self: center;
   margin: 15px;
 }
 
